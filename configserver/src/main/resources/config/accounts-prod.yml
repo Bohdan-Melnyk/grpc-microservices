@@ -1,0 +1,11 @@
+build:
+  version: "3.0"
+
+accounts:
+  message: "Welcome to eazybank account PROD related API"
+  contactDetails:
+    name: "John Doe - Developer"
+    email: "john@eazyzbank.com"
+  onLocalSupport:
+    - (777) 555-1234
+    - (888) 523-1345

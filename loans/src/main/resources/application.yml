@@ -1,0 +1,52 @@
+server:
+  port: 8090
+spring:
+  application:
+    name: "loans"
+  datasource:
+    url: jdbc:postgresql://localhost:5432/loans
+    username: postgres
+    password: 12345
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  profiles:
+    active: "prod"
+  config:
+    import: "configserver:http://localhost:8071/"
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    shutdown:
+      enabled: true
+  info:
+    env:
+      enabled: true
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    fetchRegistry: true
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: http://localhost:8070/eureka/
+
+info:
+  app:
+    name: "loans"
+    description: "Bank loans  application"
+    version: "1.0.0"
+
+endpoints:
+  shutdown:
+    enabled: true
+
+grpc:
+  server:
+    port: 9191

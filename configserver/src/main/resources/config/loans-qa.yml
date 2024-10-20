@@ -1,0 +1,11 @@
+build:
+  version: "2.0"
+
+accounts:
+  message: "Welcome to eazybank loans QA related API"
+  contactDetails:
+    name: "John Doe - The tester"
+    email: "john@eazyzbank.com"
+  onLocalSupport:
+    - (321) 555-1234
+    - (123) 523-1345

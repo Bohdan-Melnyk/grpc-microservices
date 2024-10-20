@@ -1,0 +1,11 @@
+build:
+  version: "3.0"
+
+accounts:
+  message: "Welcome to eazybank loans PROD related API"
+  contactDetails:
+    name: "John Doe - Tech Lead"
+    email: "john@eazyzbank.com"
+  onLocalSupport:
+    - (789) 555-1234
+    - (987) 523-1345
